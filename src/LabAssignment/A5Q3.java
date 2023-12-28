@@ -12,10 +12,10 @@ public class A5Q3 {
 		System.out.print("Enter second number: ");
 		num2 = obj.nextInt();
 		
-    System.out.println("Prime numbers between 4 and 15 are: ");
-    for(int i = num1;i <= num2;i++) {
+    System.out.println("Prime numbers between " + num1 + " and "+ num2 + " are: ");
+    for(int i = num1 + 1;i < num2;i++) {
       boolean flag = true;
-      for(int j = 2;j * j < i;j++) {
+      for(int j = 2;j * j <= i;j++) {
         if(i % j == 0) {
           flag = false;
           break;

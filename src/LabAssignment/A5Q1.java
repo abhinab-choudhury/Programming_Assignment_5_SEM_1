@@ -14,26 +14,26 @@ public class A5Q1 {
 		
 
 		int sum1 = 0;
-		for(int i = 1;i * i < num1;i++) {
+		for(int i = 1;i * i <= num1;i++) {
 			if(num1 % i == 0) {
-				if(num1 % i != num1 / i) {
+				if(i != num1 / i) {
 					sum1 += i;
 					sum1 += num1 / i;
 				} else {
-					sum1 += num1 / i;
+					sum1 += i;
 				}
 			}
 		}
 		sum1 -= num1;
 
 		int sum2 = 0;
-		for(int i = 1;i * i < num2;i++) {
+		for(int i = 1;i * i <= num2;i++) {
 			if(num2 % i == 0) {
-				if(num2 % i != num2 / i) {
+				if(i != num2 / i) {
 					sum2 += i;
 					sum2 += num2 / i;
 				} else {
-					sum2 += num2 / i;
+					sum2 += i;
 				}
 			}
 		}

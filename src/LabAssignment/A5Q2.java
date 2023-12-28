@@ -12,8 +12,8 @@ public class A5Q2 {
 		temp = N;
 
 
-		for(int i = 2;i * i < N;i++) {
-			if(i % N == 0) {
+		for(int i = 2;i * i <= N;i++) {
+			if(N % i == 0) {
 				flag = false;
 				break;
 			}
@@ -25,8 +25,8 @@ public class A5Q2 {
 				rev = rev * 10 + (temp % 10);
 				temp /= 10;
 			}
-			for(int i = 2;i * i < rev;i++){
-				if(i % rev == 0) {
+			for(int i = 2;i * i <= rev;i++){
+				if(rev % i == 0) {
 					flag = false;
 					break;
 				}
