@@ -10,18 +10,18 @@ public class A5Q3 {
     double x = obj.nextDouble();
 
     double sum = 0;
-    double k = 1, sign = 1;
-    double term = x;
+    double k = 2, sign = 1;
+    double term = 1;
     double fact = 1;
     while(Math.abs(term) > error) {
-      sum += term;
-      k += 2;
-      sign *= -1;
-      fact *= k * (k - 1);
-      term = sign * Math.pow(x, k)/fact;
+        sum += term;
+        sign *= -1;
+        fact *= k * (k - 1);
+        term = sign * Math.pow(x, k)/fact;
+        k += 2;
     }
-    System.out.println("sin (x) = (x) - (x^3)/3! + (x^5)/5! - (x^7)/7! + .... + ");
-    System.out.println("sin(" + x +  ") : " + sum);
+    System.out.println("cos(x) = 1 - (x^2)/2! + (x^4)/4! - (x^6)/6! + .... " );
+    System.out.println("cos(" + x + ") : " + sum);
 
     obj.close();
   }
